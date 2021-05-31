@@ -15,7 +15,6 @@ app.use(express.static(path.join(__dirname)));
 
 app.post("/submitform", (req, res)=>{
  
-//Mail Functionality - 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
 
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   
