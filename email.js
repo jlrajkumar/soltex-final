@@ -9,7 +9,7 @@ const ContactFormSubmission = require('./models/contactform');
 const app = express();
 
 
-app.use(express.json()); //Used to parse JSON bodies
+app.use(express.json()); //Used to READ  body fields
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname)));
 
@@ -19,7 +19,7 @@ app.post("/submitform", (req, res)=>{
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   
 const msg = {
-to: 'lakshman.jaddu@gmail.com', // Change to your recipient HR@COMPANY.COM
+to: 'HR@soltexsystems.com', // Change to your recipient HR@COMPANY.COM
 from: 'jlrkumarjaddu@gmail.com', // Change to your verified sender
 subject: `${req.body.fname} has submitted a request on your website`,
 text: `Name: ${req.body.fname} \nEmail: ${req.body.email} \nPhone: ${req.body.tel} \nMessage: ${req.body.message}`,

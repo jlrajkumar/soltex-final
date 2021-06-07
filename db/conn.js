@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(`mongodb+srv://lrkjaddu:lrkjaddu@soltex-contactform.7ftfu.mongodb.net/SoltexDB?retryWrites=true&w=majority?authSource=admin`,
+mongoose.connect('mongodb+srv://lrkjaddu:lrkjaddu@soltex-contactform.7ftfu.mongodb.net/SoltexDB?retryWrites=true&w=majority?authSource=admin',
             {
                 useNewUrlParser:true,
                 useUnifiedTopology: true, 

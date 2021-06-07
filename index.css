@@ -32,12 +32,15 @@ body{
     font-family: Montserrat, sans-serif;
   
   }
+
+
   .navbar li a, .navbar .navbar-brand {
     color: black !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
     background-color: #fff !important;
+
   }  /* Nav Bar*/
 
 ::selection
