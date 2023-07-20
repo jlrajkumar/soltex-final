@@ -19,7 +19,7 @@ app.post("/submitform", (req, res)=>{
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   
 const msg = {
-to: 'HR@soltexsystems.com', // Change to your recipient HR@COMPANY.COM
+to: 'jlrkumarjaddu@gmail.com', // Change to your recipient HR@COMPANY.COM
 from: 'jlrkumarjaddu@gmail.com', // Change to your verified sender
 subject: `${req.body.fname} has submitted a request on your website`,
 text: `Name: ${req.body.fname} \nEmail: ${req.body.email} \nPhone: ${req.body.tel} \nMessage: ${req.body.message}`,
